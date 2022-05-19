@@ -55,28 +55,27 @@ body {
 
 }
 
-.tituloTemplate {
-    text-transform: uppercase;
-    color: $colorSecondary;
-    margin: 30px 0;
-    font-size: $fontLarge;
-}
+footer {
+    background-color: #ffff;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
 
-.footer {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
-    
     &__derechos {
-        display: flex;
-        flex-direction: row;
+        margin-top: 2.5rem;
+        margin-left: 2.5rem;
     }
-    
-    &__link {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    
-    } 
+
+    &__redes {
+        margin: 2rem 1.5rem;
+        width: 24rem;
+        justify-self: end;
+
+        &__link {
+            margin: 1rem;
+            text-align: center;
+        }
+    }
+      
+
 }

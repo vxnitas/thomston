@@ -19,7 +19,6 @@ body {
     height: 100px;
     width: 100%;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 
     display: flex;
     flex-direction: row;
@@ -65,7 +64,7 @@ ul {
     border-radius: 10px;
     margin-left: 20%;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 0;
     padding: 5%;
     
 }
@@ -76,27 +75,36 @@ ul {
 }
 
 .gradientes {
-    background: rgb(255,255,255);
+    background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 11%, rgba(234,227,252,1) 35%);
 }
 
 .footer {
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center; 
+    background-color: #ffff;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footer__derechos {
-    display: flex;
-    flex-direction: row;
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
 }
 
+.footer__redes {
+    margin: 2rem 1.5rem;
+    width: 24rem;
+    justify-self: end;
+}
 
 .footer__link {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+    margin: 1rem;
+    text-align: center;
+}
+
+.title__disco {
+    margin-top: 5px;
+    text-align: center;
 
 }
 
@@ -126,26 +134,23 @@ ul {
     display: block;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 5%;
+    margin: 1rem;
+    padding: 2rem;
     object-fit: cover;
 }
 
 .video__magnolia, .video__honeymoon {
-    width: 100%;
+    width: 60%;
 }
 
 .header__icono {
     display: none;
 }
 
-.footer__icono {
-    display: none;
-}
-
 .banner {
-    padding: 100px 1rem;
+    padding: 70px 1rem;
     min-height: 60px;
-    
+        
 }
 
 .banner__grid {
@@ -173,10 +178,6 @@ ul {
         flex-direction: row;
     
     }
-
-    /* .nav {
-        display: none;
-    } */
 
     .header__open {
         text-decoration: none;
@@ -239,17 +240,26 @@ ul {
     }
 
     .footer {
-        flex-direction: column;
-        margin: 10% 0 0 0;
+        background-color: #ffff;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .footer__derechos {
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .footer__redes {
+        margin: 2rem 1.5rem;
+        width: 24rem;
+        justify-self: end;
     }
     
     .footer__link {
-        display: none;
-    }
-
-    .footer__icono{
-        display: block;
-        
+        margin: 1rem;
+        text-align: center;
     }
 
     .playlist {
